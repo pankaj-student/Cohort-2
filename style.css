@@ -1,5 +1,5 @@
 @font-face {
-    font-family: air;
+    font-family: she;
     src: url(./sf-pro-text_regular.woff2);
 }
 
@@ -8,63 +8,71 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:air;
+    font-family: she;
 }
-
 
 html,body{
     height: 100%;
-    width: 100%;
+    width: 1005;
 }
 
 
-#nav{
-    height: 40px;
-    width: 100%;
-    background-color: rgb(29, 28, 28);
+#parent{
+    height: 100%;
+    height: 100%;
+    background-color: lightblue;
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.card{
+    height: 300px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+    padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-evenly;
+    flex-direction: column;
+
 }
 
-
-#nav a{
-    text-decoration-line: none;
-    color: #fff;
+.card img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50px;
 }
 
+.card h1{
+    font-size: 26px;
+    font-weight: 600;
+}
 
-#center{
-    height: 90%;
-    width: 100%;
+.card p{
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
     text-align: center;
-    padding: 20px;
-    background-image: url(https://www.apple.com/v/home/ch/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_small_2x.jpg);
-    background-size: cover;
-    background-position: center;
-
 }
 
-#center h1{
-    font-size: 50px;
-}
-
-#center p{
-    font-size: 30px;
-    padding: 10px;
-}
-
-
-#link{
-    padding: 5px;
-}
-
-#link button{
-    font-size: 20px;
-    padding: 10px;
-    border:none;
+.card button{
+    padding: 10px 15px;
+    font-size: 16px;
     border-radius: 30px;
-    background-color: blue;
+    border: none;
+    background-color: rgb(36, 182, 241);
     color: #fff;
+    border: 2px solid rgb(36, 182, 255) ;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.card button:hover{
+    background-color:transparent;
+    color:  rgb(36, 182, 255) ;
 }
